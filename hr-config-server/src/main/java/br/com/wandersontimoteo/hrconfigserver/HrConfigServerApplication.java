@@ -26,7 +26,7 @@ public class HrConfigServerApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		System.out.println("GITHUB_USER = "+ username);
-		System.out.println("GITHUB_PASS = "+ password);
+		//System.out.println("GITHUB_PASS = "+ password);
 
 	}
 }
