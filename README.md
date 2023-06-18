@@ -15,6 +15,7 @@ docker run -p 5433:5432 --name hr-user-pg12 --network hr-net -e POSTGRES_PASSWOR
 ```
 
 ## hr-config-server
+Criar Dockerfile na raiz do projeto
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -33,6 +34,7 @@ docker run -p 8888:8888 --name hr-config-server --network hr-net -e GITHUB_USER=
 ```
 
 ## hr-eureka-server
+Criar Dockerfile na raiz do projeto
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -51,6 +53,7 @@ docker run -p 8761:8761 --name hr-eureka-server --network hr-net hr-eureka-serve
 ```
 
 ## hr-worker
+Criar Dockerfile na raiz do projeto
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -68,6 +71,7 @@ docker run -P --network hr-net hr-worker:v1
 ```
 
 ## hr-user
+Criar Dockerfile na raiz do projeto
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -85,6 +89,7 @@ docker run -P --network hr-net hr-user:v1
 ```
 
 ## hr-payroll
+Criar Dockerfile na raiz do projeto
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -102,6 +107,7 @@ docker run -P --network hr-net hr-payroll:v1
 ```
 
 ## hr-oauth
+Criar Dockerfile na raiz do projeto
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -119,6 +125,7 @@ docker run -P --network hr-net hr-oauth:v1
 ```
 
 ## hr-api-gateway-zuul
+Criar Dockerfile na raiz do projeto
 ```
 FROM openjdk:11
 VOLUME /tmp
