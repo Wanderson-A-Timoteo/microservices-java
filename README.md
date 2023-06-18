@@ -21,9 +21,11 @@ VOLUME /tmp
 EXPOSE 8888
 ADD ./target/hr-config-server-0.0.1-SNAPSHOT.jar hr-config-server.jar
 ENTRYPOINT ["java","-jar","/hr-config-server.jar"]
-``` 
 ```
-mvnw clean package
+### Linux Mint
+No diretório do projeto hr-config-server
+```
+./mvnw clean package
 
 docker build -t hr-config-server:v1 .
 
@@ -37,9 +39,11 @@ VOLUME /tmp
 EXPOSE 8761
 ADD ./target/hr-eureka-server-0.0.1-SNAPSHOT.jar hr-eureka-server.jar
 ENTRYPOINT ["java","-jar","/hr-eureka-server.jar"]
-``` 
 ```
-mvnw clean package
+### Linux Mint
+No diretório do projeto hr-eureka-server
+```
+./mvnw clean package
 
 docker build -t hr-eureka-server:v1 .
 
@@ -53,8 +57,10 @@ VOLUME /tmp
 ADD ./target/hr-worker-0.0.1-SNAPSHOT.jar hr-worker.jar
 ENTRYPOINT ["java","-jar","/hr-worker.jar"]
 ``` 
+### Linux Mint
+No diretório do projeto hr-worker
 ```
-mvnw clean package -DskipTests
+./mvnw clean package -DskipTests
 
 docker build -t hr-worker:v1 .
 
@@ -67,9 +73,11 @@ FROM openjdk:11
 VOLUME /tmp
 ADD ./target/hr-user-0.0.1-SNAPSHOT.jar hr-user.jar
 ENTRYPOINT ["java","-jar","/hr-user.jar"]
-``` 
 ```
-mvnw clean package -DskipTests
+### Linux Mint
+No diretório do projeto hr-user
+```
+./mvnw clean package -DskipTests
 
 docker build -t hr-user:v1 .
 
@@ -82,9 +90,11 @@ FROM openjdk:11
 VOLUME /tmp
 ADD ./target/hr-payroll-0.0.1-SNAPSHOT.jar hr-payroll.jar
 ENTRYPOINT ["java","-jar","/hr-payroll.jar"]
-``` 
 ```
-mvnw clean package -DskipTests
+### Linux Mint
+No diretório do projeto hr-payroll
+```
+./mvnw clean package -DskipTests
 
 docker build -t hr-payroll:v1 .
 
@@ -98,8 +108,10 @@ VOLUME /tmp
 ADD ./target/hr-oauth-0.0.1-SNAPSHOT.jar hr-oauth.jar
 ENTRYPOINT ["java","-jar","/hr-oauth.jar"]
 ``` 
+### Linux Mint
+No diretório do projeto hr-oauth
 ```
-mvnw clean package -DskipTests
+./mvnw clean package -DskipTests
 
 docker build -t hr-oauth:v1 .
 
@@ -114,8 +126,11 @@ EXPOSE 8765
 ADD ./target/hr-api-gateway-zuul-0.0.1-SNAPSHOT.jar hr-api-gateway-zuul.jar
 ENTRYPOINT ["java","-jar","/hr-api-gateway-zuul.jar"]
 ``` 
+
+### Linux Mint
+No diretório do projeto hr-api-gateway-zull
 ```
-mvnw clean package -DskipTests
+./mvnw clean package -DskipTests
 
 docker build -t hr-api-gateway-zuul:v1 .
 
